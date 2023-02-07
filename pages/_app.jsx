@@ -1,4 +1,5 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle, ThemeProvider } from 'styled-components'
+import theme from '../src/theme'
 
 const GloblaStyle = createGlobalStyle`
   * {
@@ -8,14 +9,16 @@ const GloblaStyle = createGlobalStyle`
 
   body {
     font-family: 'Roboto', sans-serif;
+    color: ${(props) => props.theme.colorText};
+    background-color: ${(props) => props.theme.background};
   }
 `
 function App({ Component, pageProps }) {
   return (
-    <>
+    <ThemeProvider theme={theme}>
       <GloblaStyle />
       <Component {...pageProps} />
-    </>
+    </ThemeProvider>
   )
 }
 
