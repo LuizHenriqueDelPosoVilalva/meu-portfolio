@@ -45,6 +45,7 @@ function Navbar() {
       <InfoContent>
         <StyledInfo>Projetos</StyledInfo>
         <StyledInfo>Contatos</StyledInfo>
+        <StyledInfo>Certificados</StyledInfo>
       </InfoContent>
     </StyledNavbar>
   )
