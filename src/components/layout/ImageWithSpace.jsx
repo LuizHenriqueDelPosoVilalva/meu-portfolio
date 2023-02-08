@@ -5,11 +5,10 @@ const StyledFlex = styled.div`
 `
 
 const StyledImage = styled.div`
-  background-image: url('./minha-foto-recortada.png');
+  background-image: url('./Minha-Foto2.jpeg');
   background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 50px;
 
   width: 50%;
   height: 100vh;
