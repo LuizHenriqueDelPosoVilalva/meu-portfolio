@@ -36,12 +36,17 @@ const StyledInfo = styled.a`
 const InfoContent = styled.div`
   display: flex;
   gap: 30px;
+
+  @media (max-width: 650px) {
+    display: flex;
+    gap: 10px;
+  }
 `
 
 function Navbar() {
   return (
     <StyledNavbar>
-      <StyledLogo>#Meu portfólio</StyledLogo>
+      <StyledLogo>Web Dev</StyledLogo>
       <InfoContent>
         <StyledInfo>Projetos</StyledInfo>
         <StyledInfo>Contatos</StyledInfo>

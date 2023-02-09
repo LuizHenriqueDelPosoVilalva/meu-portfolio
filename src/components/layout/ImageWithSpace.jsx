@@ -14,7 +14,7 @@ const StyledImage = styled.div`
   width: 100%;
   height: 100vh;
 
-  @media (max-width: 700px) {
+  @media (max-width: 800px) {
     display: none;
   }
 `

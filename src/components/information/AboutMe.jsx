@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 import H2 from '../typography/H2'
+import H4 from '../typography/H4'
 import Icon from '../icon/Icon'
 
 const StyledContent = styled.div`
@@ -16,7 +17,7 @@ const StyledConteiner = styled.div`
 
 const StyledParagraph = styled.p`
   font-size: 17px;
-  max-width: 500px;
+  max-width: 600px;
 `
 
 const StyledIconFlex = styled.div`
@@ -24,6 +25,7 @@ const StyledIconFlex = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 30px;
   cursor: pointer;
 `
 
@@ -33,13 +35,14 @@ function AboutMe() {
       <H2>Sobre mim:</H2>
       <StyledConteiner>
         <StyledParagraph>
-          Tenho 24 anos e estudo programação a 6 meses, descobri meu sonho e minha paixão em
-          programar no ano de 2022, antes disso sempre trabalhei em serviços pesados e apesar de
-          gostar de tecnologia, de ficar varias horas no computador nunca acreditei que programação
-          fosse pra mim, até que tive um problema de saude que me impede de pegar pesos, precisei
-          fazer transição de carreira, comecei a estudar programação e nunca mais parei.
+          Olá meu nome é Luiz Henrique tenho 24 anos , descobri meu sonho e minha paixão em
+          programar no ano de 2022, antes disso sempre trabalhei em serviços pesados, apesar de
+          gostar de tecnologia, então resolvir um dia parar tudo que estava fazendo para estudar e
+          desde então nunca mais parei, estudo todo dia o quanto eu puder, estou buscando qualquer
+          oportunidades no mercado de trabalho da programação.
         </StyledParagraph>
         <StyledIconFlex>
+          <H4>Meu GitHub:</H4>
           <Icon
             iconName={'github'}
             link={'https://github.com/LuizHenriqueDelPosoVilalva'}
