@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 const StyledFlex = styled.div`
   display: flex;
+  justify-content: center;
 `
 
 const StyledImage = styled.div`
@@ -10,8 +11,12 @@ const StyledImage = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
 
-  width: 50%;
+  width: 100%;
   height: 100vh;
+
+  @media (max-width: 700px) {
+    display: none;
+  }
 `
 
 const StyledContainer = styled.div`
