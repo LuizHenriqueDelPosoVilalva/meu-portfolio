@@ -4,6 +4,7 @@ import Container from '../src/components/layout/Container'
 import Navbar from '../src/components/layout/Navbar'
 import ImageWithSpace from '../src/components/layout/ImageWithSpace'
 import AboutMe from '../src/components/information/AboutMe'
+import MySkills from '../src/components/layout/MySkills'
 import H1 from '../src/components/typography/H1'
 import H4 from '../src/components/typography/H4'
 
@@ -40,6 +41,7 @@ export default function HomePage() {
             <H4>Desenvolvedor fullstack</H4>
             <AboutMe />
           </ImageWithSpace>
+          <MySkills />
         </Container>
       </Content>
     </>

@@ -12,7 +12,7 @@ const StyledContent = styled.div`
 `
 
 const StyledConteiner = styled.div`
-  margin-top: 10px;
+  margin-top: 30px;
 `
 
 const StyledParagraph = styled.p`
@@ -26,13 +26,12 @@ const StyledIconFlex = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 30px;
-  cursor: pointer;
 `
 
 function AboutMe() {
   return (
     <StyledContent>
-      <H2>Sobre mim:</H2>
+      <H2>Sobre mim</H2>
       <StyledConteiner>
         <StyledParagraph>
           Olá meu nome é Luiz Henrique tenho 24 anos , descobri meu sonho e minha paixão em
