@@ -3,9 +3,9 @@ import styled from 'styled-components'
 const StyledNavbar = styled.div`
   display: flex;
   align-items: center;
+  background-color: ${(props) => props.theme.primaryColor};
   padding: 20px 100px;
   border-bottom: solid 1px;
-  border-radius: 5px;
   width: 100%;
   box-sizing: border-box;
   position: fixed;
@@ -19,6 +19,7 @@ const StyledLogo = styled.span`
   flex: 1;
   font-weight: bold;
   font-size: 20px;
+  color: ${(props) => props.theme.background};
 
   @media (max-width: 450px) {
     display: none;
@@ -29,9 +30,10 @@ const StyledInfo = styled.a`
   padding: 5px 5px;
   cursor: pointer;
   transition: 0.3s;
+  color: ${(props) => props.theme.background};
 
   :hover {
-    background-color: ${(props) => props.theme.primaryColor};
+    background-color: ${(props) => props.theme.colorText};
     border-radius: 5px;
     color: ${(props) => props.theme.background};
   }
