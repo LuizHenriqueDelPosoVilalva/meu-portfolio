@@ -5,7 +5,6 @@ const StyledContainer = styled.div`
   justify-content: center;
 `
 const StyledChildren = styled.div`
-  max-width: 1200px;
   width: 100%;
 `
 

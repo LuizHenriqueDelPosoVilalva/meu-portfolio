@@ -31,11 +31,12 @@ const StyledInfo = styled.a`
   cursor: pointer;
   transition: 0.3s;
   color: ${(props) => props.theme.background};
+  font-weight: bold;
 
   :hover {
-    background-color: ${(props) => props.theme.colorText};
+    background-color: ${(props) => props.theme.background};
     border-radius: 5px;
-    color: ${(props) => props.theme.background};
+    color: ${(props) => props.theme.colorText};
   }
 `
 
@@ -50,13 +51,17 @@ const InfoContent = styled.div`
 `
 
 function Navbar() {
+  const handleClick = () => {
+    console.log('AQUI')
+  }
+
   return (
     <StyledNavbar>
       <StyledLogo>Web Dev</StyledLogo>
       <InfoContent>
         <StyledInfo>Projetos</StyledInfo>
         <StyledInfo>Contatos</StyledInfo>
-        <StyledInfo>Certificados</StyledInfo>
+        <StyledInfo onClick={handleClick}>Tecnologias</StyledInfo>
         <StyledInfo>Sobre mim</StyledInfo>
       </InfoContent>
     </StyledNavbar>
