@@ -17,7 +17,8 @@ const StyledConteiner = styled.div`
 
 const StyledParagraph = styled.p`
   font-size: 17px;
-  max-width: 600px;
+  max-width: 800px;
+  text-align: center;
 `
 
 const StyledIconFlex = styled.div`

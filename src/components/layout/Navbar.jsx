@@ -4,11 +4,12 @@ const StyledNavbar = styled.div`
   display: flex;
   align-items: center;
   padding: 20px 100px;
-  border: 1px solid;
+  border-bottom: solid 1px;
   border-radius: 5px;
-  border-top: none;
-  border-left: none;
-  border-right: none;
+  width: 100%;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
 
   @media (max-width: 800px) {
     padding: 20px 20px;
@@ -38,7 +39,7 @@ const StyledInfo = styled.a`
 
 const InfoContent = styled.div`
   display: flex;
-  gap: 30px;
+  gap: 20px;
 
   @media (max-width: 650px) {
     display: flex;

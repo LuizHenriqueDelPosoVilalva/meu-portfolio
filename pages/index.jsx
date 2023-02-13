@@ -8,13 +8,6 @@ import MySkills from '../src/components/layout/MySkills'
 import H1 from '../src/components/typography/H1'
 import H4 from '../src/components/typography/H4'
 
-const Content = styled.div`
-  margin: 20px;
-`
-const SpaceNavbar = styled.div`
-  margin-bottom: 20px;
-`
-
 const StyledSpan = styled.span`
   color: ${(props) => props.theme.primaryColor};
 `
@@ -26,24 +19,20 @@ const StyledParagraph = styled.p`
 export default function HomePage() {
   return (
     <>
-      <Content>
-        <Container>
-          <SpaceNavbar>
-            <Navbar />
-          </SpaceNavbar>
-          <ImageWithSpace>
-            <StyledParagraph>
-              <StyledSpan>olá meu nome é:</StyledSpan>
-            </StyledParagraph>
-            <H1>
-              <StyledSpan>Luiz Henrique</StyledSpan>
-            </H1>
-            <H4>Desenvolvedor fullstack</H4>
-            <AboutMe />
-          </ImageWithSpace>
-          <MySkills />
-        </Container>
-      </Content>
+      <Navbar />
+      <Container>
+        <ImageWithSpace>
+          <StyledParagraph>
+            <StyledSpan>Meu nome é:</StyledSpan>
+          </StyledParagraph>
+          <H1>
+            <StyledSpan>Luiz Henrique</StyledSpan>
+          </H1>
+          <H4>Desenvolvedor fullstack</H4>
+          <AboutMe />
+        </ImageWithSpace>
+        <MySkills />
+      </Container>
     </>
   )
 }
