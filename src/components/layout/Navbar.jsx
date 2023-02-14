@@ -1,4 +1,6 @@
 import styled from 'styled-components'
+import { Link } from 'react-scroll'
+import { useState } from 'react'
 
 const StyledNavbar = styled.div`
   display: flex;
@@ -26,7 +28,7 @@ const StyledLogo = styled.span`
   }
 `
 
-const StyledInfo = styled.a`
+const StyledInfo = styled.div`
   padding: 5px 5px;
   cursor: pointer;
   transition: 0.3s;
@@ -51,18 +53,43 @@ const InfoContent = styled.div`
 `
 
 function Navbar() {
-  const handleClick = () => {
-    console.log('AQUI')
-  }
-
+  const [click, setClick] = useState(false)
+  const handleClick = () => setClick(!click)
+  const closeMenu = () => setClick(false)
   return (
     <StyledNavbar>
-      <StyledLogo>Web Dev</StyledLogo>
+      <StyledLogo onClick={handleClick}>Web Dev</StyledLogo>
       <InfoContent>
-        <StyledInfo>Projetos</StyledInfo>
-        <StyledInfo>Contatos</StyledInfo>
-        <StyledInfo onClick={handleClick}>Tecnologias</StyledInfo>
-        <StyledInfo>Sobre mim</StyledInfo>
+        <StyledInfo>
+          <Link>Projetos</Link>
+        </StyledInfo>
+        <StyledInfo>
+          <Link>Contatos</Link>
+        </StyledInfo>
+        <StyledInfo>
+          <Link
+            to="MySkills"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+            onClick={closeMenu}
+          >
+            Tecnologias
+          </Link>
+        </StyledInfo>
+        <StyledInfo>
+          <Link
+            to="ImageWithSpace"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+            onClick={closeMenu}
+          >
+            Sobre mim
+          </Link>
+        </StyledInfo>
       </InfoContent>
     </StyledNavbar>
   )

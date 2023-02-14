@@ -25,7 +25,7 @@ const StyledContainer = styled.div`
 
 function ImageWithSpace({ children }) {
   return (
-    <div>
+    <div id="ImageWithSpace">
       <StyledFlex>
         <StyledImage />
         <StyledContainer>{children}</StyledContainer>
