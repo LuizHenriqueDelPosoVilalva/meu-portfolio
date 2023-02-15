@@ -5,6 +5,7 @@ import Navbar from '../src/components/layout/Navbar'
 import ImageWithSpace from '../src/components/layout/ImageWithSpace'
 import AboutMe from '../src/components/information/AboutMe'
 import MySkills from '../src/components/layout/MySkills'
+import MyProjects from '../src/components/layout/MyProjects'
 import H1 from '../src/components/typography/H1'
 import H4 from '../src/components/typography/H4'
 
@@ -32,6 +33,7 @@ export default function HomePage() {
           <AboutMe />
         </ImageWithSpace>
         <MySkills />
+        <MyProjects />
       </Container>
     </>
   )

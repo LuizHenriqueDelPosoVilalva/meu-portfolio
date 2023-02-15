@@ -11,7 +11,7 @@ const StyledContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 30px 0;
+  margin-top: 60px;
 `
 function MySkills() {
   return (

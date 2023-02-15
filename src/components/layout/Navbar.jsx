@@ -5,7 +5,7 @@ import { useState } from 'react'
 const StyledNavbar = styled.div`
   display: flex;
   align-items: center;
-  background-color: ${(props) => props.theme.primaryColor};
+  background-color: rgba(255, 255, 0, 0.9);
   padding: 20px 100px;
   border-bottom: solid 1px;
   width: 100%;
@@ -71,7 +71,7 @@ function Navbar() {
             to="MySkills"
             spy={true}
             smooth={true}
-            offset={50}
+            offset={-200}
             duration={500}
             onClick={closeMenu}
           >
@@ -83,7 +83,7 @@ function Navbar() {
             to="ImageWithSpace"
             spy={true}
             smooth={true}
-            offset={50}
+            offset={-200}
             duration={500}
             onClick={closeMenu}
           >
