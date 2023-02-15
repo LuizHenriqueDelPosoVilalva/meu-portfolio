@@ -4,11 +4,23 @@ import LinkProjects from '../linkprojects/LinkProjects'
 import H4 from '../typography/H4'
 
 const StyledContainer = styled.div`
-  width: 1200px;
+  width: 900px;
   border-radius: 10px;
   display: flex;
   background-color: ${(props) => props.theme.primaryColor};
   color: ${(props) => props.theme.background};
+
+  @media (max-width: 950px) {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+  }
+
+  @media (max-width: 500px) {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+  }
 `
 
 const StyledImage = styled.div`
@@ -20,6 +32,11 @@ const StyledImage = styled.div`
 
   width: 40%;
   height: 250px;
+
+  @media (max-width: 950px) {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+  }
 `
 
 const StyledContent = styled.div`
