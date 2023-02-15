@@ -61,7 +61,16 @@ function Navbar() {
       <StyledLogo onClick={handleClick}>Web Dev</StyledLogo>
       <InfoContent>
         <StyledInfo>
-          <Link>Projetos</Link>
+          <Link
+            to="Projects"
+            spy={true}
+            smooth={true}
+            offset={-200}
+            duration={500}
+            onClick={closeMenu}
+          >
+            Projetos
+          </Link>
         </StyledInfo>
         <StyledInfo>
           <Link>Contatos</Link>

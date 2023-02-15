@@ -24,14 +24,14 @@ const StyledContainer = styled.div`
 `
 
 const StyledImage = styled.div`
-  background-image: url('./coffee-background.jpg');
+  background-image: url('./jogodavelha.png');
   background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 10px 0 0 10px;
 
   width: 40%;
-  height: 300px;
+  height: 250px;
 
   @media (max-width: 950px) {
     width: 100%;
@@ -54,23 +54,20 @@ const StyledParagraph = styled.p`
   text-align: center;
 `
 
-function SocialDev() {
+function JogoDaVelha() {
   return (
     <StyledContainer>
       <StyledImage />
       <StyledContent>
-        <H4>Social Dev</H4>
+        <H4>Jogo da Velha</H4>
         <StyledParagraph>
-          Uma rede social para programadores, esse projeto foi feito em duas semanas, foi utilizado
-          no frontend React, NextJs e styled components, o backend foi feito com NextJs e os dados
-          dos usuarios foram enviados para ORM mongoose e armazedado no banco de dados MongoDb, com
-          sistema de login e cadastro, podendo dentro dele criar e publicar textos, editar e deletar
-          textos ja publicados de sua autoria.
+          Um jogo da velha tradicional, feito com React e NextJs, com sistema de placar, vencedor e
+          reset do jogo caso empate.
         </StyledParagraph>
-        <LinkProjects link={'https://social-dev-omega.vercel.app/login'} />
+        <LinkProjects link={'https://react-jogo-da-velha-psi.vercel.app/'} />
       </StyledContent>
     </StyledContainer>
   )
 }
 
-export default SocialDev
+export default JogoDaVelha
