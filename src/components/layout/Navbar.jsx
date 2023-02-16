@@ -23,7 +23,7 @@ const StyledLogo = styled.span`
   font-size: 20px;
   color: ${(props) => props.theme.background};
 
-  @media (max-width: 450px) {
+  @media (max-width: 550px) {
     display: none;
   }
 `
@@ -98,6 +98,9 @@ function Navbar() {
           >
             Sobre mim
           </Link>
+        </StyledInfo>
+        <StyledInfo>
+          <Link>Formação</Link>
         </StyledInfo>
       </InfoContent>
     </StyledNavbar>

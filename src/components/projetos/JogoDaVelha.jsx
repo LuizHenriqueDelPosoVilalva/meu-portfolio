@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import LinkProjects from '../linkprojects/LinkProjects'
+import Links from '../links/Links'
 import H4 from '../typography/H4'
 
 const StyledContainer = styled.div`
@@ -64,7 +64,7 @@ function JogoDaVelha() {
           Um jogo da velha tradicional, feito com React e NextJs, com sistema de placar, vencedor e
           reset do jogo caso empate.
         </StyledParagraph>
-        <LinkProjects link={'https://react-jogo-da-velha-psi.vercel.app/'} />
+        <Links link={'https://react-jogo-da-velha-psi.vercel.app/'} />
       </StyledContent>
     </StyledContainer>
   )

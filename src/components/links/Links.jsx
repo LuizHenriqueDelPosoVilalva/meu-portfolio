@@ -22,7 +22,7 @@ const StyledTitle = styled.span`
   }
 `
 
-function LinkProjects({ link }) {
+function Links({ link }) {
   return (
     <StyledLink href={link} target={'_blank'} rel="noreferrer">
       <StyledParagraph>
@@ -32,4 +32,4 @@ function LinkProjects({ link }) {
   )
 }
 
-export default LinkProjects
+export default Links

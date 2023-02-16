@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import LinkProjects from '../linkprojects/LinkProjects'
+import Links from '../links/Links'
 import H4 from '../typography/H4'
 
 const StyledContainer = styled.div`
@@ -67,7 +67,7 @@ function SocialDev() {
           sistema de login e cadastro, podendo dentro dele criar e publicar textos, editar e deletar
           textos ja publicados de sua autoria.
         </StyledParagraph>
-        <LinkProjects link={'https://social-dev-omega.vercel.app/login'} />
+        <Links link={'https://social-dev-omega.vercel.app/login'} />
       </StyledContent>
     </StyledContainer>
   )
