@@ -33,7 +33,16 @@ const StyledIconFlex = styled.div`
   margin-top: 20px;
   display: flex;
   justify-content: space-around;
-  gap: 30px;
+  background-color: ${(props) => props.theme.primaryColor};
+  padding: 20px;
+  border-radius: 10px;
+`
+
+const StyledEmail = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 10px;
 `
 
 function AboutMe() {
@@ -44,14 +53,12 @@ function AboutMe() {
         <StyledParagraph>
           Olá meu nome é Luiz Henrique tenho 24 anos , descobri meu sonho e minha paixão em
           programar no ano de 2022, antes disso sempre trabalhei em serviços pesados, apesar de
-          gostar de tecnologia, então resolvir um dia parar tudo que estava fazendo para estudar e
-          desde então nunca mais parei, estudo todo dia o quanto eu puder, estou buscando qualquer
+          gostar de tecnologia, então resolvi um dia parar tudo que estava fazendo para estudar e
+          desde então nunca mais parei, estudo todo dia o quanto eu puder, estou buscando quaisquer
           oportunidades no mercado de trabalho da programação.
         </StyledParagraph>
         <StyledSubtitle>
           <H4 id="Contacts">Contatos</H4>
-          <Icon iconName={'email'} alt="gmail" />
-          <StyledParagraph>luizgarciaevilalva@gmail.com</StyledParagraph>
         </StyledSubtitle>
         <StyledIconFlex>
           <Icon
@@ -59,12 +66,16 @@ function AboutMe() {
             link={'https://github.com/LuizHenriqueDelPosoVilalva'}
             alt="GitHub"
           />
+          <Icon iconName={'email'} alt="gmail" />
           <Icon
             iconName={'linkedin'}
             link={'https://www.linkedin.com/in/luiz-henrique-delposovilalva/'}
             alt="linkedin"
           />
         </StyledIconFlex>
+        <StyledEmail>
+          <StyledParagraph>Email: luizgarciaevilalva@gmail.com</StyledParagraph>
+        </StyledEmail>
       </StyledConteiner>
     </StyledContent>
   )
