@@ -29,7 +29,8 @@ const StyledLogo = styled.span`
   }
 `
 
-const StyledInfo = styled.div`
+const StyledInfo = styled.button`
+  border: 0;
   padding: 10px 5px;
   gap: 5px;
   cursor: pointer;
@@ -64,11 +65,10 @@ const InfoContent = styled.div`
 
 function Navbar() {
   const [click, setClick] = useState(false)
-  const handleClick = () => setClick(!click)
-  const closeMenu = () => setClick(false)
+  const closeMenu = () => setClick(true)
   return (
     <StyledNavbar>
-      <StyledLogo onClick={handleClick}>Web Dev</StyledLogo>
+      <StyledLogo>Web Dev</StyledLogo>
       <InfoContent>
         <StyledInfo>
           <Link
@@ -89,7 +89,9 @@ function Navbar() {
             smooth={true}
             offset={-200}
             duration={500}
-            onClick={closeMenu}
+            onClick={() => {
+              click
+            }}
           >
             Contatos
           </Link>
@@ -101,7 +103,9 @@ function Navbar() {
             smooth={true}
             offset={-200}
             duration={500}
-            onClick={closeMenu}
+            onClick={() => {
+              click
+            }}
           >
             Tecnologias
           </Link>
@@ -113,7 +117,9 @@ function Navbar() {
             smooth={true}
             offset={-200}
             duration={500}
-            onClick={closeMenu}
+            onClick={() => {
+              click
+            }}
           >
             Sobre mim
           </Link>
@@ -125,7 +131,9 @@ function Navbar() {
             smooth={true}
             offset={-200}
             duration={500}
-            onClick={closeMenu}
+            onClick={() => {
+              click
+            }}
           >
             Formação
           </Link>
