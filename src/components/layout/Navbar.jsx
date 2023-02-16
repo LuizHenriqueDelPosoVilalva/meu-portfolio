@@ -1,6 +1,6 @@
 import styled from 'styled-components'
-import { Link } from 'react-scroll'
-import { useState } from 'react'
+
+import NavbarLink from '../links/NavbarLink'
 
 const StyledNavbar = styled.div`
   display: flex;
@@ -64,79 +64,24 @@ const InfoContent = styled.div`
 `
 
 function Navbar() {
-  const [click, setClick] = useState(false)
-  const closeMenu = () => setClick(true)
   return (
     <StyledNavbar>
       <StyledLogo>Web Dev</StyledLogo>
       <InfoContent>
         <StyledInfo>
-          <Link
-            to="Projects"
-            spy={true}
-            smooth={true}
-            offset={-200}
-            duration={500}
-            onClick={closeMenu}
-          >
-            Projetos
-          </Link>
+          <NavbarLink to="Projects">Projetos</NavbarLink>
         </StyledInfo>
         <StyledInfo>
-          <Link
-            to="Contacts"
-            spy={true}
-            smooth={true}
-            offset={-200}
-            duration={500}
-            onClick={() => {
-              click
-            }}
-          >
-            Contatos
-          </Link>
+          <NavbarLink to="Contacts">Contatos</NavbarLink>
         </StyledInfo>
         <StyledInfo>
-          <Link
-            to="MySkills"
-            spy={true}
-            smooth={true}
-            offset={-200}
-            duration={500}
-            onClick={() => {
-              click
-            }}
-          >
-            Tecnologias
-          </Link>
+          <NavbarLink to="MySkills">Tecnologias</NavbarLink>
         </StyledInfo>
         <StyledInfo>
-          <Link
-            to="ImageWithSpace"
-            spy={true}
-            smooth={true}
-            offset={-200}
-            duration={500}
-            onClick={() => {
-              click
-            }}
-          >
-            Sobre mim
-          </Link>
+          <NavbarLink to="ImageWithSpace">Sobre mim</NavbarLink>
         </StyledInfo>
         <StyledInfo>
-          <Link
-            to="Training"
-            spy={true}
-            smooth={true}
-            offset={-200}
-            duration={500}
-            onClick={() => {
-              click
-            }}
-          >
-            Formação
-          </Link>
+          <NavbarLink to="Training">Formação</NavbarLink>
         </StyledInfo>
       </InfoContent>
     </StyledNavbar>
