@@ -49,7 +49,7 @@ const StyledInfo = styled.button`
 
   @media (max-width: 450px) {
     font-size: 15px;
-    padding: 0px;
+    padding: 2px;
   }
 `
 
