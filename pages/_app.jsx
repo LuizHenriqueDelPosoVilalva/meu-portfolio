@@ -12,7 +12,7 @@ const GloblaStyle = createGlobalStyle`
     font-family: 'Roboto', sans-serif;
     color: ${(props) => props.theme.colorText};
     background-color: ${(props) => props.theme.background};
-    padding-top: 100px;
+    padding-top: 80px;
   }
 `
 function App({ Component, pageProps }) {
