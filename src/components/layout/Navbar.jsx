@@ -4,9 +4,10 @@ import { useState } from 'react'
 
 const StyledNavbar = styled.div`
   display: flex;
+  justify-content: center;
   align-items: center;
   background-color: rgba(255, 255, 0, 0.9);
-  padding: 20px 100px;
+  padding: 20px 50px;
   border-bottom: solid 1px;
   width: 100%;
   box-sizing: border-box;
@@ -29,28 +30,35 @@ const StyledLogo = styled.span`
 `
 
 const StyledInfo = styled.div`
-  padding: 5px 5px;
+  padding: 10px 5px;
+  gap: 5px;
   cursor: pointer;
   transition: 0.3s;
   color: ${(props) => props.theme.background};
   font-weight: bold;
+  background-color: ${(props) => props.theme.background};
+  border-radius: 5px;
+  color: ${(props) => props.theme.colorText};
 
   :hover {
-    background-color: ${(props) => props.theme.background};
+    background-color: ${(props) => props.theme.colorText};
     border-radius: 5px;
-    color: ${(props) => props.theme.colorText};
+    color: ${(props) => props.theme.background};
   }
 
   @media (max-width: 450px) {
     font-size: 15px;
+    padding: 0 5px;
   }
 `
 
 const InfoContent = styled.div`
   display: flex;
+  gap: 10px;
 
   @media (max-width: 650px) {
     display: flex;
+    gap: 5px;
   }
 `
 

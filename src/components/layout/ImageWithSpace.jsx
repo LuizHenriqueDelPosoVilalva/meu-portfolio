@@ -3,6 +3,13 @@ import styled from 'styled-components'
 const StyledFlex = styled.div`
   display: flex;
   justify-content: center;
+
+  @media (max-width: 800px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 `
 
 const StyledImage = styled.div`
@@ -15,7 +22,15 @@ const StyledImage = styled.div`
   height: 100vh;
 
   @media (max-width: 800px) {
-    display: none;
+    width: 400px;
+    height: 400px;
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: 450px) {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 30px;
   }
 `
 
