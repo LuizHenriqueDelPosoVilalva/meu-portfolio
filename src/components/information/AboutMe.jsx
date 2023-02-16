@@ -21,11 +21,18 @@ const StyledParagraph = styled.p`
   text-align: center;
 `
 
-const StyledIconFlex = styled.div`
-  margin-top: 40px;
+const StyledSubtitle = styled.div`
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 10px;
+`
+
+const StyledIconFlex = styled.div`
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
   gap: 30px;
 `
 
@@ -41,12 +48,21 @@ function AboutMe() {
           desde então nunca mais parei, estudo todo dia o quanto eu puder, estou buscando qualquer
           oportunidades no mercado de trabalho da programação.
         </StyledParagraph>
+        <StyledSubtitle>
+          <H4 id="Contacts">Contatos</H4>
+          <Icon iconName={'email'} alt="gmail" />
+          <StyledParagraph>luizgarciaevilalva@gmail.com</StyledParagraph>
+        </StyledSubtitle>
         <StyledIconFlex>
-          <H4>Meu GitHub:</H4>
           <Icon
             iconName={'github'}
             link={'https://github.com/LuizHenriqueDelPosoVilalva'}
-            alt="Landscape picture"
+            alt="GitHub"
+          />
+          <Icon
+            iconName={'linkedin'}
+            link={'https://www.linkedin.com/in/luiz-henrique-delposovilalva/'}
+            alt="linkedin"
           />
         </StyledIconFlex>
       </StyledConteiner>

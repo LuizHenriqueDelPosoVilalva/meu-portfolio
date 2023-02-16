@@ -73,7 +73,16 @@ function Navbar() {
           </Link>
         </StyledInfo>
         <StyledInfo>
-          <Link>Contatos</Link>
+          <Link
+            to="Contacts"
+            spy={true}
+            smooth={true}
+            offset={-200}
+            duration={500}
+            onClick={closeMenu}
+          >
+            Contatos
+          </Link>
         </StyledInfo>
         <StyledInfo>
           <Link
