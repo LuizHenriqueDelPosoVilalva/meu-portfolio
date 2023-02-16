@@ -23,7 +23,7 @@ function Footer() {
   return (
     <StyledFooter>
       <StyledFlex>
-        <StyledParagraph>created by: Luiz Henrique Del Poso Vilalva, 2023</StyledParagraph>
+        <StyledParagraph>CREATED BY Luiz Henrique Del Poso Vilalva, 2023</StyledParagraph>
       </StyledFlex>
     </StyledFooter>
   )

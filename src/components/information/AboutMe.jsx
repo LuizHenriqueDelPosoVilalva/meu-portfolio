@@ -30,9 +30,10 @@ const StyledSubtitle = styled.div`
 `
 
 const StyledIconFlex = styled.div`
-  margin-top: 20px;
+  margin-top: 60px;
   display: flex;
   justify-content: space-around;
+  align-items: center;
   background-color: ${(props) => props.theme.primaryColor};
   padding: 20px;
   border-radius: 10px;
@@ -43,6 +44,14 @@ const StyledEmail = styled.div`
   flex-direction: column;
   justify-content: center;
   margin-top: 10px;
+
+  @media (min-width: 1200px) {
+    display: none;
+  }
+`
+
+const Abbr = styled.abbr`
+  cursor: pointer;
 `
 
 function AboutMe() {
@@ -66,7 +75,9 @@ function AboutMe() {
             link={'https://github.com/LuizHenriqueDelPosoVilalva'}
             alt="GitHub"
           />
-          <Icon iconName={'email'} alt="gmail" />
+          <Abbr title="Email: luizgarciaevilalva@gmail.com">
+            <Icon iconName={'email'} alt="gmail" />
+          </Abbr>
           <Icon
             iconName={'linkedin'}
             link={'https://www.linkedin.com/in/luiz-henrique-delposovilalva/'}
