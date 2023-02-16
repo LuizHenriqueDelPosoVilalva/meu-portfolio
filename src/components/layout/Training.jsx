@@ -16,7 +16,7 @@ const StyledSpan = styled.span`
 
 function Training() {
   return (
-    <StyledContainer>
+    <StyledContainer id="Training">
       <H2>
         <StyledSpan>Formação</StyledSpan>
       </H2>

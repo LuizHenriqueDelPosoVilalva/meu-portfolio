@@ -100,7 +100,16 @@ function Navbar() {
           </Link>
         </StyledInfo>
         <StyledInfo>
-          <Link>Formação</Link>
+          <Link
+            to="Training"
+            spy={true}
+            smooth={true}
+            offset={-200}
+            duration={500}
+            onClick={closeMenu}
+          >
+            Formação
+          </Link>
         </StyledInfo>
       </InfoContent>
     </StyledNavbar>

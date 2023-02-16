@@ -7,6 +7,7 @@ import AboutMe from '../src/components/information/AboutMe'
 import MySkills from '../src/components/layout/MySkills'
 import MyProjects from '../src/components/layout/MyProjects'
 import Training from '../src/components/layout/Training'
+import Footer from '../src/components/layout/Footer'
 import H1 from '../src/components/typography/H1'
 import H4 from '../src/components/typography/H4'
 
@@ -36,6 +37,7 @@ export default function HomePage() {
         <MySkills />
         <MyProjects />
         <Training />
+        <Footer />
       </Container>
     </>
   )
