@@ -1,21 +1,23 @@
 import styled from 'styled-components'
 
 import NavbarLink from '../links/NavbarLink'
+import ResponsiveNavbar from '../Navigation/ResponsiveNavbar'
 
 const StyledNavbar = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: rgba(255, 255, 0, 0.9);
-  padding: 20px 50px;
+  padding: 20px 80px;
   border-bottom: solid 1px;
   width: 100%;
+  max-height: 70px;
   box-sizing: border-box;
   position: fixed;
   top: 0;
 
   @media (max-width: 800px) {
-    padding: 5px 5px;
+    padding: 20px 40px;
   }
 `
 const StyledLogo = styled.span`
@@ -23,16 +25,16 @@ const StyledLogo = styled.span`
   font-weight: bold;
   font-size: 20px;
   color: ${(props) => props.theme.background};
+`
 
-  @media (max-width: 550px) {
-    display: none;
-  }
+const InfoContent = styled.div`
+  display: flex;
+  gap: 20px;
 `
 
 const StyledInfo = styled.button`
   border: 0;
-  padding: 10px 5px;
-  gap: 5px;
+  padding: 10px;
   cursor: pointer;
   transition: 0.3s;
   color: ${(props) => props.theme.background};
@@ -47,19 +49,16 @@ const StyledInfo = styled.button`
     color: ${(props) => props.theme.background};
   }
 
-  @media (max-width: 450px) {
-    font-size: 15px;
-    padding: 2px;
+  @media (max-width: 750px) {
+    display: none;
   }
 `
 
-const InfoContent = styled.div`
-  display: flex;
-  gap: 10px;
+const ContainerMenu = styled.div`
+  float: right;
 
-  @media (max-width: 650px) {
-    display: flex;
-    gap: 5px;
+  @media (min-width: 751px) {
+    display: none;
   }
 `
 
@@ -83,6 +82,9 @@ function Navbar() {
         <StyledInfo>
           <NavbarLink to="Training">Formação</NavbarLink>
         </StyledInfo>
+        <ContainerMenu>
+          <ResponsiveNavbar />
+        </ContainerMenu>
       </InfoContent>
     </StyledNavbar>
   )

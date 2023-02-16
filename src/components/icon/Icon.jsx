@@ -12,7 +12,7 @@ function Icon({ iconName, link, alt }) {
   return (
     <a href={link} target={'_blank'} rel="noreferrer">
       <StyledImage>
-        <Image src={`/icons/${iconName}.svg`} alt={alt} width="40px" height="40px" />
+        <Image src={`/icons/${iconName}.svg`} alt={alt} width="50px" height="50px" />
       </StyledImage>
     </a>
   )
