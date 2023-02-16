@@ -14,7 +14,7 @@ const StyledNavbar = styled.div`
   top: 0;
 
   @media (max-width: 800px) {
-    padding: 20px 20px;
+    padding: 5px 5px;
   }
 `
 const StyledLogo = styled.span`
@@ -40,15 +40,17 @@ const StyledInfo = styled.div`
     border-radius: 5px;
     color: ${(props) => props.theme.colorText};
   }
+
+  @media (max-width: 450px) {
+    font-size: 15px;
+  }
 `
 
 const InfoContent = styled.div`
   display: flex;
-  gap: 20px;
 
   @media (max-width: 650px) {
     display: flex;
-    gap: 5px;
   }
 `
 
