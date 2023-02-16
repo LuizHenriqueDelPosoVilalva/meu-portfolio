@@ -44,10 +44,6 @@ const StyledEmail = styled.div`
   flex-direction: column;
   justify-content: center;
   margin-top: 10px;
-
-  @media (min-width: 1200px) {
-    display: none;
-  }
 `
 
 const Abbr = styled.abbr`
