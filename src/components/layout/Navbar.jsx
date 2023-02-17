@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import NavbarLink from '../links/NavbarLink'
 import ResponsiveNavbar from '../Navigation/ResponsiveNavbar'
 
-const StyledNavbar = styled.div`
+const StyledNavbar = styled.nav`
   display: flex;
   justify-content: center;
   align-items: center;

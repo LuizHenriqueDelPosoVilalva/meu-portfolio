@@ -52,6 +52,15 @@ function MyTraining() {
           </StyledParagraph>
         </StyledContent>
       </StyledContainer>
+      <StyledContainer>
+        <StyledContent>
+          <H4>Curso SejaDev etapa Conquest</H4>
+          <StyledParagraph>
+            Nessa etapa aprendi a como me tornar mais atrativo para as empresas e como me preparar
+            para os processos seletivos, com certificado de conclusão.
+          </StyledParagraph>
+        </StyledContent>
+      </StyledContainer>
     </>
   )
 }
