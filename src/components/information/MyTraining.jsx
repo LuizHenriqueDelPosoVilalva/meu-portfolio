@@ -36,10 +36,21 @@ function MyTraining() {
     <>
       <StyledContainer>
         <StyledContent>
+          <H4>Faculdade</H4>
+          <StyledParagraph>
+            Estou cursando tecnologia em analise e desenvolvimento de sistemas na faculdade IFMS-
+            Instituto Federal de Mato Grosso do Sul.{' '}
+            <strong>inicio: 14/03/2023, fim: Cursando.</strong>
+          </StyledParagraph>
+        </StyledContent>
+      </StyledContainer>
+      <StyledContainer>
+        <StyledContent>
           <H4>Curso SejaDev etapa starter</H4>
           <StyledParagraph>
             Nessa etapa aprendi sobre do HTML5, Css, JavaScripth e versonamento de código, com
             certificado de conclusão.
+            <strong>inicio: 27/09/2022, fim: 20/10/2022.</strong>
           </StyledParagraph>
         </StyledContent>
       </StyledContainer>
@@ -49,6 +60,7 @@ function MyTraining() {
           <StyledParagraph>
             Nessa etapa aprendi como utilizar o React com NextJs, aprendi Express, backend com
             NextJs, ORM Mongoose e banco de dados MongoDB, com certificado de conclusão.
+            <strong>inicio: 21/10/2022, fim: 30/01/2023.</strong>
           </StyledParagraph>
         </StyledContent>
       </StyledContainer>
@@ -58,6 +70,7 @@ function MyTraining() {
           <StyledParagraph>
             Nessa etapa aprendi a como me tornar mais atrativo para as empresas e como me preparar
             para os processos seletivos, com certificado de conclusão.
+            <strong>inicio: 01/02/2023, fim: 14/02/2023.</strong>
           </StyledParagraph>
         </StyledContent>
       </StyledContainer>
