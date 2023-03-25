@@ -15,7 +15,7 @@ const StyledTitle = styled.span`
   cursor: pointer;
   transition: 0.3s;
   padding: 5px;
-  :hover {
+  &:hover {
     background-color: ${(props) => props.theme.background};
     border-radius: 5px;
     color: ${(props) => props.theme.colorText};

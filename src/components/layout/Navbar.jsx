@@ -43,7 +43,7 @@ const StyledInfo = styled.button`
   border-radius: 5px;
   color: ${(props) => props.theme.colorText};
 
-  :hover {
+  &:hover {
     background-color: ${(props) => props.theme.colorText};
     border-radius: 5px;
     color: ${(props) => props.theme.background};

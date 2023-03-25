@@ -38,7 +38,7 @@ const StyledFlexParagraph = styled.div`
   cursor: pointer;
   transition: 0.3s;
 
-  :hover {
+  &:hover {
     background-color: ${(props) => props.theme.colorText};
     border-radius: 5px;
     color: ${(props) => props.theme.background};
