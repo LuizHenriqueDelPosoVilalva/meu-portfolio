@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import H2 from '../typography/H2'
 import SocialDev from '../projetos/SocialDev'
 import JogoDaVelha from '../projetos/JogoDaVelha'
+import ClimaDev from '../projetos/ClimaDev'
 
 const StyledContainer = styled.div`
   display: flex;
@@ -22,6 +23,7 @@ function MyProjects() {
       <StyledSpan>
         <H2>Projetos</H2>
       </StyledSpan>
+      <ClimaDev />
       <SocialDev />
       <JogoDaVelha />
     </StyledContainer>
